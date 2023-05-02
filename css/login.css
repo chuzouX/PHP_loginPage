@@ -1,0 +1,84 @@
+a {
+	width: 140px;
+	color: gray;
+	font-size: 15px;
+	text-decoration: none;
+	margin-top: 10px;
+}
+error {
+	color:red;
+	font-size: 15px;
+	margin-top: 10px;
+	font-weight: bolder;
+}
+body {
+	background-color: #f2f2f2; 
+}
+
+.login-container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 400px;
+	padding: 20px;
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+h1 {
+	text-align: center;
+	font-size: 36px;
+	margin-bottom: 20px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+input[type="text"], input[type="password"] {
+	padding: 10px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	border: none;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.button[type="submit"] {
+	padding: 10px;
+	background-color: #4CAF50;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+	cursor: pointer;
+	transition: background-color 0.2s ease-in-out;
+}
+
+.button[type="submit"]:hover {
+	background-color: #3e8e41;
+}
+
+@media screen and (max-width: 600px) {
+	.login-container {
+		position: static;
+		width: 100%;
+		margin: 0;
+		box-shadow: none;
+	}
+
+	input[type="text"], input[type="password"], .button[type="submit"] {
+		padding: 8px;
+	}
+
+	.button[type="submit"] {
+		margin-top: 10px;
+	}
+
+	h1 {
+		font-size: 28px;
+		margin-bottom: 10px;
+	}
+}
