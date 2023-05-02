@@ -11,7 +11,7 @@
 			<input type="text" placeholder="用户名" id="username" name="username">
 			<input type="password" placeholder="密码" id="password" name="password">
             <input type="email" placeholder="电子邮箱" id="email" name="email">
-            <div name="g-recaptcha" id="g-recaptcha" class="g-recaptcha" data-sitekey="6LcHZdQlAAAAADDPpe1grbuiS2rh1ZrA9gVJTMKY"></div>
+            <div name="g-recaptcha" id="g-recaptcha" class="g-recaptcha" data-sitekey="密钥"></div>
 			<input class="button" type="submit"></input>
             <a href="login.php">已有账号？去登录！</a>
             <?php
@@ -27,7 +27,7 @@
                 }
 
                 // 开始验证
-                $secret_key = "6LcHZdQlAAAAAHbyyFls_RJoNGjitWS-qDGYYrph";
+                $secret_key = "密钥";
                 @$response = $_POST["g-recaptcha-response"];
                 $remote_ip = $_SERVER["REMOTE_ADDR"];
     
